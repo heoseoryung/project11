@@ -29,8 +29,8 @@ export default function SellerOrders() {
         <div className="flex items-center justify-between px-4 mx-auto max-w-7xl">
           <button onClick={() => navigate("/")} className="text-2xl font-bold">606 판매자센터</button>
           <div className="flex items-center gap-4">
-            <span>전인렬 님</span>
-            <button onClick={() => navigate("/")} className="btn btn-sm btn-ghost">쇼핑몰로</button>
+            <span>전인렬</span>
+            <button onClick={() => navigate("/")} className="btn btn-sm btn-ghost">쇼핑몰</button>
           </div>
         </div>
       </header>

@@ -16,28 +16,28 @@ export default function SellerProducts() {
 
   return (
     <div className="min-h-screen bg-base-200">
-      <header className="bg-primary text-white py-4 shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
+      <header className="py-4 text-white shadow-lg bg-primary">
+        <div className="flex items-center justify-between px-4 mx-auto max-w-7xl">
           <button onClick={() => navigate("/")} className="text-2xl font-bold">606 판매자센터</button>
           <div className="flex items-center gap-4">
-            <span>홍길동 님</span>
-            <button onClick={() => navigate("/")} className="btn btn-sm btn-ghost">쇼핑몰로</button>
+            <span>전인렬님</span>
+            <button onClick={() => navigate("/")} className="btn btn-sm btn-ghost">쇼핑몰</button>
           </div>
         </div>
       </header>
 
       <div className="flex">
-        <aside className="w-64 bg-base-100 min-h-screen shadow-lg">
+        <aside className="w-64 min-h-screen shadow-lg bg-base-100">
           <nav className="p-4 space-y-2">
-            <Link to="/seller" className="btn btn-ghost w-full justify-start gap-2">
+            <Link to="/seller" className="justify-start w-full gap-2 btn btn-ghost">
               <LayoutDashboard className="w-5 h-5" />
               대시보드
             </Link>
-            <Link to="/seller/products" className="btn btn-primary w-full justify-start gap-2">
+            <Link to="/seller/products" className="justify-start w-full gap-2 btn btn-primary">
               <BoxIcon className="w-5 h-5" />
               상품관리
             </Link>
-            <Link to="/seller/orders" className="btn btn-ghost w-full justify-start gap-2">
+            <Link to="/seller/orders" className="justify-start w-full gap-2 btn btn-ghost">
               <ListOrdered className="w-5 h-5" />
               주문관리
             </Link>
@@ -47,16 +47,16 @@ export default function SellerProducts() {
         <main className="flex-1 p-8">
           <div className="flex items-center justify-between mb-8">
             <h1 className="text-3xl font-bold">상품관리</h1>
-            <button onClick={() => toast.success("상품 등록 기능")} className="btn btn-primary gap-2">
+            <button onClick={() => toast.success("상품 등록 기능")} className="gap-2 btn btn-primary">
               <Plus className="w-5 h-5" />
               상품 등록
             </button>
           </div>
 
-          <div className="card bg-base-100 shadow-xl">
+          <div className="shadow-xl card bg-base-100">
             <div className="card-body">
               <div className="flex gap-2 mb-4">
-                <input type="text" placeholder="상품명 검색" className="input input-bordered flex-1" />
+                <input type="text" placeholder="상품명 검색" className="flex-1 input input-bordered" />
                 <select className="select select-bordered">
                   <option>전체 카테고리</option>
                   <option>전자기기</option>
@@ -119,7 +119,7 @@ export default function SellerProducts() {
                 </table>
               </div>
 
-              <div className="flex justify-between items-center mt-4">
+              <div className="flex items-center justify-between mt-4">
                 <div className="flex gap-2">
                   <button className="btn btn-sm btn-outline">선택 삭제</button>
                   <button className="btn btn-sm btn-outline">선택 판매중지</button>

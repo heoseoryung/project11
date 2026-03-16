@@ -123,7 +123,7 @@ export default function Header() {
             <Link to="/category/food" className="font-semibold text-gray-400 transition-colors hover:text-white whitespace-nowrap">식품</Link>
             <Link to="/category/electronics" className="font-semibold text-gray-400 transition-colors hover:text-white whitespace-nowrap">가전디지털</Link>
             <Link to="/" className="bg-gradient-to-r from-[#FF4D00] to-[#FF1E00] bg-clip-text text-transparent font-extrabold whitespace-nowrap tracking-tight">🔥 HOT 특가</Link>
-            <Link to="/" className="font-semibold text-gray-400 transition-colors hover:text-white whitespace-nowrap">베스트</Link>
+            <Link to="/" className="font-semibold text-gray-400 transition-colors hover:text-white whitespace-nowrap">로켓배송</Link>
             <Link to="/" className="font-semibold text-gray-400 transition-colors hover:text-white whitespace-nowrap">신상품</Link>
           </nav>
         </div>

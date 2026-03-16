@@ -8,6 +8,8 @@ import Register from "./components/pages/Register";
 import CategoryProducts from "./components/pages/CategoryProducts";
 
 // 2. Auth (src/components/auth 폴더 안)
+// routes.jsx (확장자 빼고 불러보기)
+import OAuthMessageHandler from "./components/auth/OAuthMessageHandler";
 import Login from "./components/auth/Login"; 
 import Logout from "./components/auth/Logout";
 
@@ -40,6 +42,10 @@ export const router = createBrowserRouter([
   {
     path: "/login",
     Component: Login,
+  },
+  {
+    path: "/oauth-callback",
+    Component: OAuthMessageHandler,
   },
   {
     path: "/register",

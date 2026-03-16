@@ -13,7 +13,7 @@ export default function SellerDashboard() {
           <button onClick={() => navigate("/")} className="text-2xl font-bold">606 판매자센터</button>
           <div className="flex items-center gap-4">
             <span>전인렬님</span>
-            <button onClick={() => navigate("/")} className="btn btn-sm btn-ghost">쇼핑몰로</button>
+            <button onClick={() => navigate("/")} className="btn btn-sm btn-ghost">쇼핑몰</button>
           </div>
         </div>
       </header>
